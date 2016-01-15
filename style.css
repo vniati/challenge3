@@ -8,6 +8,7 @@
 
 body {
   font-family: "News Cycle", helvetica;
+  font-size: 1.2em;
 }
 
 .clearbox {
@@ -15,31 +16,30 @@ body {
 }
 
 header {
-  height: 100px;
   background-color: #eeeeee;
 }
 
 nav {
   max-width: 1000px;
-  height: 100px;
+  height: 6em;
   margin: auto;
 }
 
 .past {
-  font-size: 22px;
+  font-size: 1.5em;
   margin: auto;
-  line-height: 100px;
+  line-height: 4em;
   float: left;
   color: #2b3f48;
 }
 
 .listnav {
   float: right;
-  line-height: 100px;
+  line-height: 6em;
   list-style-type: none;
   text-decoration: none;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 1.3em;
+  padding-right: 1.3em;
 }
 
 .listnav a {
@@ -53,7 +53,7 @@ nav {
 }
 
 .firstzone {
-  height: 825px;
+  text-align: center;
   background-image: url("banner.png");
   background-color: #31aa65;
   background-size: cover;
@@ -61,21 +61,33 @@ nav {
 
 .firstcontain {
   max-width: 1000px;
-  height: 825px;
   margin: auto;
   text-align: center;
+  padding-bottom: 5em;
+  padding-top: 3em;
 }
 
+
 .pic1, .pic2, .pic3 {
-  width: 160px;
-  height: 160px;
+  width: 16%;
+  height: 16%;
   border-radius: 50%;
   text-align: center;
-  margin-top: 120px;
-  margin-left: 22.5px;
-  margin-right: 22.5px;
-  margin-bottom: 70px;
+  margin-top: 2em;
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-bottom: 4em;
   transition: all 1s;
+  display: inline-block;
+}
+
+@media (max-width: 800px) {
+  .teste {
+    display: none;
+  }
+  .firstzone h2 {
+    font-size: 1em;
+  }
 }
 
 .pic1:hover, .pic2:hover, .pic3:hover {
@@ -84,7 +96,7 @@ nav {
 }
 
 .titlefirst {
-  font-size: 55px;
+  font-size: 3.2em;
   color: white;
 }
 
@@ -103,14 +115,14 @@ nav {
 .buttonfirst {
   text-decoration: none;
   color: white;
-  border: 1px solid #2b3f48;
-  border-radius: 8px;
+  border: 0.2em solid #2b3f48;
+  border-radius: 1em;
   background-color: #2b3f48;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-top: 16.5px;
-  padding-bottom: 16.5px;
-  letter-spacing: 3px;
+  padding-left: 3em;
+  padding-right: 3em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  letter-spacing: 0.1em;
   transition: all 0.5s;
 }
 
@@ -119,46 +131,45 @@ nav {
 }
 
 .secondzone {
-  height: 615px;
   background-color: #eeeeee;
 }
 
 .secondcontain {
   max-width: 1000px;
-  height: 615px;
   margin: auto;
   text-align: center;
+  padding-bottom: 7em;
 }
 
 .titlesecond {
   font-size: 55px;
   color: #2b3f48;
-  padding-top: 100px;
+  padding-top: 2em;
 }
 
 .undertitlesecond {
   color: #2b3f48;
   font-size: 22px;
-  margin-bottom: 50px;
+  margin-bottom: 2em;
 }
 
 .txtsecond {
   color: #2b3f48;
   font-size: 17px;
-  margin-bottom: 90px;
+  margin-bottom: 5.2em;
 }
 
 .buttonsecond {
   text-decoration: none;
   color: white;
-  border: 1px solid #27ae61;
-  border-radius: 8px;
+  border: 0.2em solid #27ae61;
+  border-radius: 1em;
   background-color: #27ae61;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-top: 16.5px;
-  padding-bottom: 16.5px;
-  letter-spacing: 3px;
+  padding-left: 3em;
+  padding-right: 3em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  letter-spacing: 0.1em;
   transition: all 0.5s;
 }
 
@@ -167,33 +178,32 @@ nav {
 }
 
 .thirdzone {
-  height: 615px;
   background-color: #27ae61;
 }
 
 .thirdcontain {
   max-width: 1000px;
-  height: 615px;
   margin: auto;
   text-align: center;
+  padding-bottom: 7em;
 }
 
 .titlethird {
   font-size: 55px;
   color: white;
-  padding-top: 102px;
+  padding-top: 2em;
 }
 
 .undertitlethird {
   color: rgba(255,255,255,.5);
   font-size: 22px;
-  margin-bottom: 50px;
+  margin-bottom: 2em;
 }
 
 .txtthird {
   color: #d0eadb;
   font-size: 17px;
-  margin-bottom: 90px;
+  margin-bottom: 5.3em;
   text-decoration: none;
 }
 
@@ -214,14 +224,14 @@ nav {
 .buttonthird {
   text-decoration: none;
   color: #27ae61;
-  border: 1px solid white;
-  border-radius: 8px;
+  border: 0.2em solid white;
+  border-radius: 1em;
   background-color: white;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-top: 16.5px;
-  padding-bottom: 16.5px;
-  letter-spacing: 3px;
+  padding-left: 3em;
+  padding-right: 3em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  letter-spacing: 0.1em;
   transition: all 0.5s;
 }
 
@@ -230,13 +240,12 @@ nav {
 }
 
 footer {
-  height: 210px;
+  padding-bottom: 5em;
   background-color: #eeeeee;
 }
 
 .containfoot {
   max-width: 1000px;
-  height: 210px;
   margin: auto;
   text-align: center;
 }
